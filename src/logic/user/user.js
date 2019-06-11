@@ -44,11 +44,18 @@ module.exports = class extends think.Logic {
             money:{
                 int:true,
                 required: true
+            },
+            coerceAdd:{
+                int:true,
+                required: true
             }
         };
         const flag = this.validate(rules);
         if (!flag) {
             return this.fail('数据格式错误', this.validateErrors);
         }
+    };
+    async indexAction(){
+
     }
 };
