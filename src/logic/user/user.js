@@ -36,6 +36,14 @@ module.exports = class extends think.Logic {
             },
             buyer:{
                 string: true
+            },
+            courseNum:{
+                int:true,
+                required: true
+            },
+            money:{
+                int:true,
+                required: true
             }
         };
         const flag = this.validate(rules);
