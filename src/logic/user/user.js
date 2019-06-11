@@ -14,7 +14,7 @@ module.exports = class extends think.Logic {
                 email: true,
                 required: true
             },
-            departmentName: {
+            enterpriseName: {
                 string: true
             },
             remark: {
@@ -24,11 +24,18 @@ module.exports = class extends think.Logic {
                 int: true,
                 required: true
             },
-            credit: {
+            invoiceCode: {
                 string: true,
             },
             duty:{
                 string: true,
+            },
+            courseId:{
+                int:true,
+                required: true
+            },
+            buyer:{
+                string: true
             }
         };
         const flag = this.validate(rules);
