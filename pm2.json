@@ -1,8 +1,8 @@
 {
   "apps": [{
-    "name": "Invitation",
+    "name": "Conference_Order_BackEnd",
     "script": "production.js",
-    "cwd": "D:\Doc\Invitation",
+    "cwd": "/var/www/html/Conference_Order_BackEnd",
     "exec_mode": "fork",
     "max_memory_restart": "1G",
     "autorestart": true,
